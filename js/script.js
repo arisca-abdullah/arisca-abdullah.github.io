@@ -1,5 +1,6 @@
 let xhr = new XMLHttpRequest();
 
+let favicon = document.querySelector('.favicon');
 let github_link = document.querySelector('#github-link');
 let avatar = document.querySelector('.jumbotron img');
 let name = document.querySelector('.jumbotron h1');
@@ -18,6 +19,7 @@ xhr.onreadystatechange = function() {
         
         avatar.classList.add('img-thumbnail')
 
+        favicon.setAttribute('href', res.avatar_url);
         github_link.setAttribute('href', res.html_url)
         avatar.setAttribute('src', res.avatar_url);
 
