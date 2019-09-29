@@ -8,8 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="css/all.min.css">
+
     <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fontawesome script -->
+    <script defer src="js/all.min.js"></script>
 
     <link class="favicon" rel="shortcut icon" type="image/x-icon">
     
@@ -18,7 +24,7 @@
   <body>
       
     <!-- As a link -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="https://arisca-abdullah.github.io">
                 Arisca Abdullah
@@ -29,23 +35,28 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
                     <a class="nav-item nav-link" id="github-link">My Github</a>
-                    <a class="nav-item nav-link" href="https://codepen.io/arisca-abdullah">My Codepen</a>
+                    <a class="nav-item nav-link" id="repos-link">Repositories</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid mb-0">
+    <div class="jumbotron jumbotron-fluid mb-0 py-3">
         <div class="container text-center">
             <img class="rounded-circle animate1" alt="">
             <h1 class="display-4 mx-auto animate2 name"></h1>
+            <div class="location"></div>
             <p class="lead mx-auto animate3 bio"></p>
-            <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">My Portfolio</a>
+            <a href="https://github.com/login?return_to=%2Farisca-abdullah" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Follow Me</a>
         </div>
     </div>
 
     <footer class="bg-dark text-white text-center py-3">
-        <p class="my-auto"></p>
+        <p class="my-auto">
+            <script type="text/javascript">
+                document.write(`Copyright &copy; ${new Date().getFullYear()}`);
+            </script>
+        </p>
     </footer>
 
     <!-- Optional JavaScript -->

@@ -19,10 +19,6 @@
     animation: animate 2s infinite alternate;
 }
 
-.jumbotron {
-    min-height: 608px;
-}
-
 .jumbotron img {
     width: 200px;
     height: 200px;
