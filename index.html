@@ -20,7 +20,7 @@
     <!-- Fontawesome script -->
     <script defer src="js/all.min.js"></script>
 
-    <link class="favicon" rel="shortcut icon" type="image/x-icon" />
+    <link class="favicon" rel="shortcut icon" type="image/x-icon" href="img/logo_dark.png" />
 
     <title>Arisca Abdullah</title>
   </head>
@@ -29,6 +29,7 @@
     <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="https://arisca-abdullah.github.io">
+          <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo">
           Arisca Abdullah
         </a>
         <button
@@ -51,19 +52,26 @@
       </div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid mb-0 py-3">
-      <div class="container text-center">
-        <img class="rounded-circle animate1" alt="" />
-        <h1 class="display-4 mx-auto animate2 name"></h1>
-        <div class="location"></div>
-        <p class="lead mx-auto animate3 bio"></p>
-        <a
-          href="https://github.com/login?return_to=%2Farisca-abdullah"
-          class="btn btn-success btn-lg active"
-          role="button"
-          aria-pressed="true"
-          >Follow Me</a
-        >
+    <div class="jumbotron jumbotron-fluid d-flex align-items-center mb-0 py-3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-4">
+            <img class="rounded-circle animate1" />
+          </div>
+          <div class="col-md-6">
+            <h1 class="animate2 name"></h1>
+            <p class="animate2-5 loading-location location"></p>
+            <p class="animate3 loading-bio bio"></p>
+            <p class="animate3-5 loading-extra extra"></p>
+            <a
+              href="https://github.com/login?return_to=%2Farisca-abdullah"
+              class="btn btn-success btn-lg active"
+              role="button"
+              aria-pressed="true"
+              ><i class="fas fa-user-plus"></i> Follow</a
+            >
+          </div>
+        </div>
       </div>
     </div>
 
